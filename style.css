@@ -1,18 +1,25 @@
-/* Font */
-/* @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-/* Design */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+  
+}
+
+body * { 
+	box-sizing: border-box; 
+	outline: none; 
+font-family: 'Lato', sans-serif;
+}
 
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-html {
-  background-color: #c2c2c2;
-}
-
-
 
 .main{
   max-width: 1200px;
@@ -31,23 +38,6 @@ img {
   vertical-align: middle;
 }
 
-#myBtn {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-#myBtn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
 
 .card {
   display: flex;
@@ -81,11 +71,12 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  max-width: 19rem;
 }
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #00C0B6 40%, rgb(17, 17, 202) 100%);
+  background: linear-gradient(to bottom left, #272727 40%, rgb(75, 75, 75) 100%);
 }
 
 .card_title {
@@ -97,13 +88,6 @@ img {
   margin: 0px;
 }
 
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-}
 .followMyRepo{
   font-weight: 400;
   font-size: 13px;
@@ -114,20 +98,10 @@ img {
 --------------------------------------------------------------------------
 
 
-body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	font-family: Arial, Helvetica, sans-serif;
-}
 
-body * { 
-	box-sizing: border-box; 
-	outline: none; 
-}
 
 .container {
+   
     width: 50%;
     min-height: 100vh;
     padding: 5vmin 5vmin 5vmin 10vmin;
@@ -138,36 +112,12 @@ body * {
 	padding: 5vmin 10vmin 5vmin 5vmin;
 }
 
-h2 {
-    color: #333;
-}
-
-h2:before {
-	content: "";
-	background: url(https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico) no-repeat center center #fff;
-    width: 1.25em;
-    height: 1.25em;
-    border-radius: 100%;
-    display: inline-block;
-    margin: 0 0.5em -0.3em 0;
-    background-size: calc(1.5em);
-}
-
-h2 span {
-    font-weight: normal;
-    font-size: 0.55em;
-    float: right;
-    margin-top: 1.3vmin;
-    color: #8484841a;
-    text-shadow: -1px -1px 0 #00000069;
-}
-
 input {display:none;}
 
 label {
 	width: 100%;
     float: left;
-    background: #1f1f1f;
+    background: linear-gradient(to top right, #272727 40%, rgb(75, 75, 75) 100%);;
     outline: none;
     border: 0;
     margin: 0;
@@ -180,17 +130,17 @@ label {
 }
 
 label:hover {
-    background: #000;
+    background: rgb(27, 26, 26);
 }
 
 input:checked + label {
-	background: #000;
+	background: rgb(27, 26, 26);
 }
 
 .content {
 	float: left;
     width: 100%;
-    background: #333;
+    background: rgb(27, 26, 26);
     color: #e6e6e6;
     overflow: hidden;
     max-height: 0vmin;
@@ -198,7 +148,7 @@ input:checked + label {
     margin-top: -0.5vmin;
     margin-bottom: 1vmin;
 	border-radius: 0 0 0.5vmin 0.5vmin;
-    border-bottom: 0.5vmin solid #1f1f1f;
+    ;
 }
 
 
@@ -213,8 +163,8 @@ input:checked + label {
 .content a {
     float: right;
     background: #356379;
-    color: #fff;
-    font-size: 0.8em;
+    color: #e6e6e6;
+    
    
     padding: 0.25em 0.5em;
     margin: 0.5vmin 0;
@@ -223,9 +173,7 @@ input:checked + label {
 }
 
 
-.content a:hover {
-    background: #0070ca;
-}
+
 
 .container + .container .content a {
     margin-top: 0;
@@ -247,7 +195,7 @@ label:after {
     float: right;
     font-size: 0.75em;
     background: #333;
-    color: #fff;
+    color: #e6e6e6;
     font-weight: bold;
     border-radius: 2.5%;
     width: 100%;
@@ -258,13 +206,13 @@ label:after {
 }
 	
 label:hover:after {
-    background: #fff;
+    background: #e6e6e6;
     color: #222;
 }
 	
 input:checked + label:after {
-    background: rgb(224, 0, 0);
-    color: #222;
+    background: rgb(27 26 26);
+    color: #e6e6e6;
     content: " see less";
    
     line-height: 1.25em;
@@ -273,20 +221,19 @@ input:checked + label:after {
 }
 	
 input:checked + label:hover:after {
-    background: rgb(255, 255, 255);
+    background: #e6e6e6;
     color: #222;
   
 }
 
 
-label[for=view-0]:before, 
-label[for=view-1]:before, 
-label[for=view-2]:before {
+label[for=view-0]:before{
+
  
     font-size: 0.5em;
-    background: #a2a2a2;
+    background: #e6e6e6;
     padding: 0.25em 0.5em;
-    font-weight: bold;
+   
     margin: 0.4em 1em 0 0;
     float: left;
     color: #1f1f1f;
