@@ -1,0 +1,297 @@
+/* Font */
+/* @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700'); */
+
+/* Design */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #c2c2c2;
+}
+
+
+
+.main{
+  max-width: 1200px;
+  margin: 0 ;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#myBtn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #00C0B6 40%, rgb(17, 17, 202) 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.followMyRepo{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+} */
+
+--------------------------------------------------------------------------
+
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body * { 
+	box-sizing: border-box; 
+	outline: none; 
+}
+
+.container {
+    width: 50%;
+    min-height: 100vh;
+    padding: 5vmin 5vmin 5vmin 10vmin;
+    float: left;
+}
+
+.container + .container {
+	padding: 5vmin 10vmin 5vmin 5vmin;
+}
+
+h2 {
+    color: #333;
+}
+
+h2:before {
+	content: "";
+	background: url(https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico) no-repeat center center #fff;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 0.5em -0.3em 0;
+    background-size: calc(1.5em);
+}
+
+h2 span {
+    font-weight: normal;
+    font-size: 0.55em;
+    float: right;
+    margin-top: 1.3vmin;
+    color: #8484841a;
+    text-shadow: -1px -1px 0 #00000069;
+}
+
+input {display:none;}
+
+label {
+	width: 100%;
+    float: left;
+    background: #1f1f1f;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0.65em;
+    cursor: pointer;
+    border-radius: 0.15em;
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.35em;
+}
+
+label:hover {
+    background: #000;
+}
+
+input:checked + label {
+	background: #000;
+}
+
+.content {
+	float: left;
+    width: 100%;
+    background: #333;
+    color: #e6e6e6;
+    overflow: hidden;
+    max-height: 0vmin;
+    transition: max-height 0.75s ease 0s;
+    margin-top: -0.5vmin;
+    margin-bottom: 1vmin;
+	border-radius: 0 0 0.5vmin 0.5vmin;
+    border-bottom: 0.5vmin solid #1f1f1f;
+}
+
+
+.content > div {
+	padding: 0.5em 0.75em;
+  
+    text-align: justify;
+    font-size: 0.95em;
+    color: #e6e6e6;
+}
+
+.content a {
+    float: right;
+    background: #356379;
+    color: #fff;
+    font-size: 0.8em;
+   
+    padding: 0.25em 0.5em;
+    margin: 0.5vmin 0;
+    border-radius: 0.15em;
+    word-spacing: -0.25em;
+}
+
+
+.content a:hover {
+    background: #0070ca;
+}
+
+.container + .container .content a {
+    margin-top: 0;
+}
+
+input:checked + label + .content {
+	max-height: 20vh;
+	transition: max-height 0.75s ease 0s;
+}
+
+
+.container + .container input:checked + label + .content {
+	max-height: 10vh;
+}
+
+
+label:after {
+    content: "see more";
+    float: right;
+    font-size: 0.75em;
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2.5%;
+    width: 100%;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+    transition: all 0.5s ease 0s;
+}
+	
+label:hover:after {
+    background: #fff;
+    color: #222;
+}
+	
+input:checked + label:after {
+    background: rgb(224, 0, 0);
+    color: #222;
+    content: " see less";
+   
+    line-height: 1.25em;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+}
+	
+input:checked + label:hover:after {
+    background: rgb(255, 255, 255);
+    color: #222;
+  
+}
+
+
+label[for=view-0]:before, 
+label[for=view-1]:before, 
+label[for=view-2]:before {
+ 
+    font-size: 0.5em;
+    background: #a2a2a2;
+    padding: 0.25em 0.5em;
+    font-weight: bold;
+    margin: 0.4em 1em 0 0;
+    float: left;
+    color: #1f1f1f;
+    border-radius: 0.25em;
+}
+
+
+
